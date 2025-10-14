@@ -1,0 +1,19 @@
+estoque = [10, 70, 82, 40, 50]
+def atualizar_estoque(estoque, indice, quantidade, operacao):
+    if 0 <= indice < len(estoque):
+        if operacao == 'adicionar':
+            estoque[indice] += quantidade
+        elif operacao == 'vender':
+            if estoque[indice] >= quantidade:
+                estoque[indice] -= quantidade
+            else:
+                print(f"Estoque insuficiente para o produto {indice}.")
+        else:
+            print("Operação inválida. Use 'adicionar' ou 'vender'.")
+    else:
+        print("Índice inválido. Produto não encontrado.")
+
+
+atualizar_estoque(estoque, indice=2, quantidade=50, operacao='vender')
+
+print("Estoque atual:", estoque)
