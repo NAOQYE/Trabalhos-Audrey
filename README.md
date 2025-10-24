@@ -1,2 +1,4 @@
 # Trabalhos-Audrey
-Apenasn trabalhos para entrega do 2 ano
+Trabalhos
+Organização por setores:
+teste2: encapsulamento_banco """Houveram alguns problemas ao renomear este repositório"""
