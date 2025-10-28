@@ -46,3 +46,59 @@ Conclusão
 
 Este módulo demonstra como utilizar vetores e matrizes em Python para representar e manipular dados de forma estruturada.
 O sistema permite reservar, cancelar e visualizar o estado dos assentos de maneira simples e eficiente.
+
+
+
+
+
+
+
+Modulo 1 -------
+
+
+
+
+temperaturas = [
+    [22, 25, 28, 32],  # Cidade 1
+    [20, 23, 26, 30],  # Cidade 2
+    [18, 22, 25, 29]   # Cidade 3
+]
+
+# Função para transpor uma matriz (Meses x Cidades)
+def transpor_matriz(matriz):
+    transposta = [[matriz[j][i] forin range(len(matriz))] for i in range(len(matriz[0]))]
+    return transposta
+
+# Executa a transposição
+matriz_transposta = transpor_matriz(temperaturas)
+
+print("Matriz Original [Cidades x Meses]:")
+for linha in temperaturas:
+    print(linha)
+
+print("\nMatriz Transposta [Meses x Cidades]:")
+for lin ha in matriz_transposta:
+    print(linha)
+
+Docuemntação ------
+i percorre as colunas da matriz original.
+
+j percorre as linhas.
+
+O novo elemento [i][j] recebe o valor do elemento [j][i].
+
+Resultado:
+
+Antes → 3 linhas (cidades) × 4 colunas (meses)
+
+Depois → 4 linhas (meses) × 3 colunas (cidades)
+
+ Conclusão
+
+Este código demonstra de forma simples como:
+
+Representar dados bidimensionais (ex.: temperaturas) com listas aninhadas.
+
+Aplicar o conceito matemático de transposição de matriz em Python.
+
+Exibir e reorganizar informações de forma eficiente e legível.
